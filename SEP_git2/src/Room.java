@@ -73,16 +73,14 @@ public class Room implements Serializable
   {
     this.seatsCapacity = seatsCapacity;
   }
-
   /**
    * Returns a string representation of the room.
    * @return a string representation of the room in the format: "Number: number HDMI: isHDMI() VGA: isVGA() Projector: isProjector() Seats capacity: seatsCapacity"
    */
   public String toString()
   {
-    return "Number:"+number+" Projector:"+isProjector()+" Seats capacity:"+seatsCapacity;
+    return number;
   }
-
   /**
    * Compares number and seats capacity of two rooms.
    * @param obj the object to compare with
